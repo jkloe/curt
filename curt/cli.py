@@ -277,6 +277,8 @@ def train(ctx, precision, learning_rate, backbone_learning_rate, batch_size,
 
     if len(ground_truth) == 0:
         raise click.UsageError('No training data was provided to the train command. Use `-t` or the `ground_truth` argument.')
+    
+    print(f"n-ground-truth: {len(ground_truth)}")
 
     if freq > 1:
         val_check_interval = {'check_val_every_n_epoch': int(freq)}

@@ -15,3 +15,9 @@ experiment-*
 .mypy_cache/*
 not_tracked_dir/
 .vscode
+train_large/
+cBad*/
+curt.code-workspace
+curt.egg-info/
+build/
+curt_model/
